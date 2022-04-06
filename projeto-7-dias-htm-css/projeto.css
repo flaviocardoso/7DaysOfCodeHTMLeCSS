@@ -1,0 +1,295 @@
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --bags-color: rgba(142, 36, 36, 0.05);
+    --footer-color: #F9FAFB;
+    --text-copyright: #98A2B3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 96%;
+    margin: 0 auto;
+}
+.logo {
+    width: 148px;
+    color: #3A404E;
+    text-decoration: none;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    height: 5rem;
+}
+.links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+button {
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+button#sigUp {
+    background-color: var(--main-color);
+    color: #fff;
+}
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+.cabecalho span {
+    color: var(--main-color);
+}
+.cabecalho h1 {
+    font-size: 2rem;
+}
+.cabecalho p {
+    color: var(--text-color);
+    text-align: center;
+    max-width: 50%;
+    line-height: 1.5rem;
+}
+.metricas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 96%;
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 0 5rem 6rem;
+}
+.metricas .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-grow: 1;
+}
+.metricas .valor {
+    font-weight: bold;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+.metricas .titulo {
+    font-size: 1rem;
+}
+.metricas .conteudo {
+    color: var(--text-color);
+}
+.vagas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+.vagas-abertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.vagas-abertas img {
+    width: 100%;
+    padding: 0 3rem;
+    
+}
+.vagas-abertas-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 25%;
+}
+.vagas-abertas-container span {
+    color: var(--main-color);
+    background: var(--bags-color);
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.vagas-abertas-container h3 {
+    font-size: 1.5rem;
+}
+.vagas-abertas-container p {
+    color: var(--text-color);
+}
+.talentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+.talentos .container-talentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 1rem 1rem;  
+}
+.container-talentos > span {
+    font-weight: bold;
+}
+.itens {
+    background: #FFFFFF;
+    border: #EAECF0 1px solid;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1.5rem 1.5rem 2rem;
+    width: 50rem;
+}
+.container-talentos > span {
+    font-size: 1rem;
+}
+.itens > span {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.itens .details {
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto 6rem;
+    gap: 3rem;
+    padding: 3rem 0;
+    background: var(--bags-color);
+}
+.depoimentos-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 4rem;
+}
+.depoimentos-texto span {
+    color: var(--main-color);
+}
+.depoimentos-texto h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+.depoimentos-atribuicao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.depoimentos-atribuicao-detalhe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formularios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--footer-color);
+    gap: 2rem;
+    padding: 6rem 0;
+}
+.formularios h1 {
+    font-size: 2rem;
+}
+.formularios span {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+.formularios > span {
+    color: var(--text-copyright);
+    font-size: 1rem;
+}
+.formularios-enviar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.formumarios-enviar-titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+.formumarios-enviar-email {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: .25rem;
+    padding: 0;
+}
+.formumarios-enviar-email #email-cadastro {
+    background: #FFFFFF;
+    border: 1px solid #D0D5DD;
+    border-radius: .25rem;
+    padding: 1rem;
+    flex-grow: 1;
+}
+.formumarios-enviar-email #btnCadastrar {
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: .25rem;
+    color: #ffffff;
+}
